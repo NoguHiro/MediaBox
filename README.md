@@ -16,7 +16,7 @@ $(document).ready(function() {
 });
 ```
 
-### HTML
+##### HTML
 ```
 <button class="media" data-src="demo.png" data-width="100" data-height="100">OpenImage</button>
 <button class="media" data-src="demo.mp4" data-width="100" data-height="100">OpenVideo</button>
