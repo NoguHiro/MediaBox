@@ -1,0 +1,17 @@
+* {margin:0;padding:0;}
+.mb-base{display:none;}
+.mb-contents{
+    position: fixed;
+    z-index:10000;
+    background: #000;
+    left:50%;
+    top:50%;
+    box-shadow: 0 0 2px rgba(200, 200, 200, 0.3), 0 0 2px #ccc, 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.mb-decoration-close {
+    position:absolute;
+    display: block;
+    z-index: 100001;
+    top:-14px;
+    left:-14px;
+}

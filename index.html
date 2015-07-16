@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>sample</title>
+  <meta http-equiv="Content-Language" content="ja">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <link rel="stylesheet" href="css/jquery.media.box.css"/>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.media.box.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.media').mediaBox({
+        closeImage: 'media/close.png',
+        openSpeed: 1000,
+        closeSpeed: 800
+      });
+    });
+  </script>
+</head>
+<body>
+<div style="margin: 100px auto;width:600px;text-align: center">
+  <div class="media" data-src="media/demo.mp4" data-width="640" data-height="360"
+       style="background:#0099FF;color:#FFF;width:250px;line-height:250px;float:left">Open Movie</div>
+  <div class="media" data-src="media/demo.jpg" data-width="540" data-height="358"
+       style="background:#FF9900;color:#FFF;width:250px;line-height: 250px;float:left;margin-left: 100px">Open Image</div>
+</div>
+</body>
+</html>
