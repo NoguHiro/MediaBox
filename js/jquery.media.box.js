@@ -49,7 +49,17 @@
    * @private
    */
   MediaBox.prototype._close = function() {
-    $(this._params.elem.base).fadeOut(this._params.closeSpeed);
+    $(this._params.elem.base).fadeOut(this._params.closeSpeed, function() {
+      this._resetArrange();
+    }.bind(this));
+  };
+
+  /**
+   * reset arrange html.
+   * @private
+   */
+  MediaBox.prototype._resetArrange = function() {
+    $(this._params.elem.arrange).html('');
   };
 
   /**
@@ -58,7 +68,6 @@
    */
   MediaBox.prototype._createBaseHtml = function() {
     var html = this._parseHtml({src: this._params.closeImage}, this._params.html.base);
-    console.log(html);
     $('body').append(html);
   };
 
@@ -114,7 +123,9 @@
    */
   MediaBox.prototype._onClick = function($e) {
     if ($(this._params.elem.base).length) {
-      $(this._params.elem.base).hide(0);
+      $(this._params.elem.base).hide(0, function() {
+        this._resetArrange();
+      }.bind(this));
     }
     var src = $e.attr('data-src');
     var width = $e.attr('data-width');
