@@ -1,5 +1,5 @@
 # MediaBox
 Jquery Video, Image Gallery Box.
 
-### example
+### Example
 http://noguhiro.github.io/MediaBox/
