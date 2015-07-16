@@ -122,6 +122,7 @@
    * @private
    */
   MediaBox.prototype._onClick = function($e) {
+    alert('click');
     if ($(this._params.elem.base).length) {
       $(this._params.elem.base).hide(0, function() {
         this._resetArrange();
