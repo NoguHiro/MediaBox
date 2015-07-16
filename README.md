@@ -1,14 +1,32 @@
 # MediaBox
-Jquery Video, Image Gallery Box.
+jQuery Plugin for video and image gallery.
 
 ### Example
 http://noguhiro.github.io/MediaBox/
 
+---
 
-### Option
+### Setup
+
+##### JavaScript
+```
+$(document).ready(function() {
+  'use strict';
+  $('.demo').mediaBox();
+});
+```
+
+### HTML
+```
+<button class="media" data-src="demo.png" data-width="100" data-height="100">OpenImage</button>
+<button class="media" data-src="demo.mp4" data-width="100" data-height="100">OpenVideo</button>
+```
+
+---
+
+### Settings.
 
 ##### defaults.
----
 ```
 {
     html: {
@@ -35,8 +53,7 @@ http://noguhiro.github.io/MediaBox/
 }
 ```
 
-##### customize
----
+##### customize.
 ```
 $(selector).mediaBox({
     closeImage: 'images/close.png',
@@ -44,3 +61,4 @@ $(selector).mediaBox({
     closeSpeed: 100
 });
 ```
+---
