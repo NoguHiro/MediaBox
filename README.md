@@ -5,9 +5,10 @@ Jquery Video, Image Gallery Box.
 http://noguhiro.github.io/MediaBox/
 
 
-### option
+### Option
 
 ##### defaults.
+---
 ```
 {
     html: {
@@ -32,4 +33,14 @@ http://noguhiro.github.io/MediaBox/
     openSpeed: 500,
     closeSpeed: 300
 }
+```
+
+##### customize
+---
+```
+$(selector).mediaBox({
+    closeImage: 'images/close.png',
+    openSpeed: 100,
+    closeSpeed: 100
+});
 ```
